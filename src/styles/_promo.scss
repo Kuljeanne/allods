@@ -20,12 +20,23 @@
   &__img {
     position: relative;
     top: -8rem;
+
+    @media (max-width:775px) {
+      max-width: 100%;
+    }
   }
 
   &__title,
   &__subtitle {
+    text-align: center;
     position: relative;
     top: -11rem;
+  }
+
+  @media (max-width:775px) {
+    max-width: 100%;
+    background-image:
+      url('/public/img/layers/Hue_Saturation.png');
   }
 }
 
@@ -35,8 +46,8 @@
   right: 0;
   left: 0;
   bottom: 0;
-  background-image:url('/public/img/layers/glow_blue.png'), url('/public/img/layers/glow.png');
-  background-position:bottom, center;
+  background-image: url('/public/img/layers/glow_blue.png'), url('/public/img/layers/glow.png');
+  background-position: bottom, center;
   background-size: contain, cover;
   background-repeat: no-repeat;
   mix-blend-mode: screen;
