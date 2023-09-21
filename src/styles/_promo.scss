@@ -1,0 +1,68 @@
+.promo {
+  max-height: 90rem;
+  position: relative;
+  background-image:
+    url('/public/img/layers/MafiaCostume_2022_2.png'),
+    url('/public/img/layers/MafiaCostume_2022_3.png'),
+    url('/public/img/layers/Hue_Saturation.png');
+  background-repeat: no-repeat;
+  background-position: left, right, center;
+  background-size: contain, contain, cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__img,
+  &__logo {
+    z-index: 1;
+  }
+
+  &__img {
+    position: relative;
+    top: -8rem;
+  }
+
+  &__title,
+  &__subtitle {
+    position: relative;
+    top: -11rem;
+  }
+}
+
+.glow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-image:url('/public/img/layers/glow_blue.png'), url('/public/img/layers/glow.png');
+  background-position:bottom, center;
+  background-size: contain, cover;
+  background-repeat: no-repeat;
+  mix-blend-mode: screen;
+  z-index: 1;
+}
+
+.layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-image: url('/public/img/layers/Layer_left.png'),
+    url('/public/img/layers/Layer_right.png'),
+    url('/public/img/layers/Layer_bott.png'), ;
+  background-position: left, right, bottom;
+  background-size: contain, contain, contain;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  mix-blend-mode: multiply;
+}
+
+.promo__title {
+  font-size: 4.2rem;
+  margin-bottom: 2rem;
+}
+
+.promo__subtitle {
+  font-size: 2rem;
+}
